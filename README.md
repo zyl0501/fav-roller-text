@@ -1,5 +1,6 @@
 # FavRollerText
 仿即刻的点赞效果
+
 <img src="https://github.com/zyl0501/fav-roller-text/blob/master/screenshot.gif"> 
 
 如何使用
