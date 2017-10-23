@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    tools:context="com.ray.rollertext.demo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="输入数字"
+            android:inputType="number"
+            android:text="99" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/sel_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选中" />
+
+            <RadioButton
+                android:id="@+id/unsel_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="未选中" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onSetFav"
+            android:text="OK" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fav_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="onFavLayoutClick"
+        >
+
+        <com.ray.rollertext.FavImage
+            android:id="@+id/fav_img"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:onClick="onFavImgClick"
+            />
+
+        <com.ray.rollertext.RollerText
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#ccc"
+            android:textSize="13sp"
+            android:onClick="onRollerTextClick"
+            />
+    </LinearLayout>
+
+</LinearLayout>
